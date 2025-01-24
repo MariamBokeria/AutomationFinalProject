@@ -1,0 +1,16 @@
+<suite name="POM - Project">
+    <lissteners>
+        <listener class-name="com.saucedemo.utils.TestListener" />
+    </lissteners>
+
+    <test name="Login Scenarios">
+        <classes>
+            <class name="com.saucedemo.tests.LoginTest"/>
+        </classes>
+    </test>
+    <test name="Login Scenarios 2">
+        <classes>
+            <class name="com.saucedemo.tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>

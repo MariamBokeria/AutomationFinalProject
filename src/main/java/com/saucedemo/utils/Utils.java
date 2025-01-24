@@ -1,4 +1,4 @@
-package com.mesaudabeauty.utils;
+package com.saucedemo.utils;
 
 public class Utils {
     public static void log(String message){

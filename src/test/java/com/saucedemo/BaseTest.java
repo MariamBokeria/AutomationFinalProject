@@ -1,6 +1,6 @@
-package com.mesaudabeauty;
+package com.saucedemo;
 
-import com.mesaudabeauty.utils.DriverManager;
+import com.saucedemo.utils.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +12,7 @@ public class BaseTest {
     public void setUp(){
         driver = DriverManager.getDriver();
         driver.manage().window().maximize();
-        driver.get("https://mesaudabeauty.com/account/login?return_url=%2Faccount");
+        driver.get("https://www.saucedemo.com/");
     }
 
     @AfterMethod

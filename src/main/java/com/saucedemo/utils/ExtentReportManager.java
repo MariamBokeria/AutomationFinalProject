@@ -1,4 +1,4 @@
-package com.mesaudabeauty.utils;
+package com.saucedemo.utils;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
