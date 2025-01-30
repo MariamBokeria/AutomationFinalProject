@@ -12,6 +12,7 @@ public class LoginTest extends BaseTest {
     LoginPage loginPage = new LoginPage(driver);
     InventoryPage inventoryPage = new InventoryPage(driver);
 
+    // ავტორიზაციის ტესტი ვალიდური კრედენშიალებით
     @Test
     public void testValidLogin(){
         loginPage.login("standard_user ", "secret_sauce");
@@ -20,6 +21,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(actualUrl, expectedUrl, "Login Faieled");
     }
 
+    // ავტორიზაციის ტესტი არავალიდური კრედენშიალებით
     @Test
     public void testInvalidLogin(){
         String expectedMessage = "Epic sadface: Username and password do not match any user in this service";
@@ -27,6 +29,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(actualMessage, expectedMessage, "Incorrect error message");
     }
 
+    // სისტემიდან გამოსვლის ტესტი
     @Test
     public void logOutTest(){
         loginPage.login("standard_user", "secret_sauce");

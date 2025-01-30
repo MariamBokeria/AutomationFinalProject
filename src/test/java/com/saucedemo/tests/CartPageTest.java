@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 public class CartPageTest extends BaseTest {
     InventoryPage inventoryPage = new InventoryPage(driver);
     CartPage cartPage = new CartPage(driver);
+    // ნივთის კალათში დამატების ტესტი
     @Test
     public void addItemToCartCheckTest(){
         inventoryPage.addToCart();
@@ -17,6 +18,7 @@ public class CartPageTest extends BaseTest {
         String actualItem = cartPage.checkItem();
         Assert.assertEquals(actualItem, expectedItem, "Item mismatch");
     }
+    // კალათში გადასვლის ტესტი
     @Test
     public void cartPageCheckTest(){
         String expectedHeader = "Your Cart";
