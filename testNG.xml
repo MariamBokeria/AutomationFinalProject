@@ -3,14 +3,14 @@
         <listener class-name="com.saucedemo.utils.TestListener" />
     </lissteners>
 
-    <test name="Login Scenarios">
+    <test name="Login/Logout Scenarios">
         <classes>
             <class name="com.saucedemo.tests.LoginTest"/>
         </classes>
     </test>
-    <test name="Login Scenarios 2">
+    <test name="Cart Page Tests">
         <classes>
-            <class name="com.saucedemo.tests.LoginTest"/>
+            <class name="com.saucedemo.tests.CartPageTest"/>
         </classes>
     </test>
 </suite>

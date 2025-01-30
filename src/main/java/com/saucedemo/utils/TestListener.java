@@ -1,4 +1,4 @@
-package ge.automation.utils;
+package com.saucedemo.utils;
 
 import com.saucedemo.utils.ExtentReportManager;
 import com.saucedemo.utils.Utils;

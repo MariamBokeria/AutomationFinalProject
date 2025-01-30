@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testValidLogin(){
-        loginPage.login("standard_user", "secret_sauce");
+        loginPage.login("standard_user ", "secret_sauce");
         String expectedUrl = "https://www.saucedemo.com/inventory.html";
         String actualUrl = driver.getCurrentUrl();
         Assert.assertEquals(actualUrl, expectedUrl, "Login Faieled");
