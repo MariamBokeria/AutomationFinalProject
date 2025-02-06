@@ -9,12 +9,12 @@ public class CartPage extends BasePage {
     public CartPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "/html/body/div/div/div/div[1]/div[2]/span")
-    WebElement yourCart;
+    @FindBy(xpath = "/html/body/div/div/div/div[1]/div[1]/div[3]/a")
+    WebElement cartIcon;
     @FindBy(id = "item_0_title_link")
     WebElement item;
-    public String goToCartPage(){
-        return getElementText(yourCart);
+    public void goToCartPage(){
+        clickToElement(cartIcon);
     }
     public String checkItem(){
         return getElementText(item);
